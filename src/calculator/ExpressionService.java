@@ -62,7 +62,7 @@ public class ExpressionService {
                         result = exponentiation * exponentiation;
                         resultStack.push(result);
                     }
-                    default -> System.out.println("Алармус");
+                    default -> System.out.println("Алармус, это не оператор!");
                 }
             }
         }

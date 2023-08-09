@@ -15,7 +15,6 @@ import static calculator.Utils.addSpaces;
  */
 public class UnaryMinusPreparator {
 
-//    private String expression;
 
     public UnaryMinusPreparator() {
 
@@ -83,9 +82,9 @@ public class UnaryMinusPreparator {
             System.err.println(e.getMessage());
         }
 
-        //получаем само выражение из валидатора.
+        //получаем чищенное от пробелов выражение из валидатора.
         String expression = mathExpressionValidator.getExpression();
-
+        //разделяем валидное выражение на токены и операнды с помощью addSpaces и далее сплитуем в список ArrayList.
         ArrayList<String> validExpression = new ArrayList<>(Arrays.asList(addSpaces(expression).split(" ")));
         ArrayList<String> tempArray = new ArrayList<>();
 
