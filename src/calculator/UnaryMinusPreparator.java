@@ -16,10 +16,7 @@ import static calculator.Utils.addSpaces;
 public class UnaryMinusPreparator {
 
 
-    public UnaryMinusPreparator() {
-
-
-    }
+    public UnaryMinusPreparator() {}
 
 
     /**
@@ -31,44 +28,6 @@ public class UnaryMinusPreparator {
     }
 
 
-//    /**
-//     * Метод для замены спецсимвола "#", которым ранее методом unaryMinusSymbolChanger
-//     * в пользовательском выражении заменили унарный минус, на коллекцию символов "(0-1)*".
-//     */
-//    public ArrayList<String> specialSymbolChanger() {
-//
-//        ArrayList<String> arrayListTokens = unaryMinusSymbolChanger();
-//        ArrayList<String> changedArrayListTokens = new ArrayList<>();
-//        for (String item : arrayListTokens) {
-//            if (!item.equals("#")) {
-//                changedArrayListTokens.add(item);
-//            } else {
-//                changedArrayListTokens.addAll(additionalCollectionOfTokens);
-//            }
-//        }
-//        return changedArrayListTokens;
-//    }
-//
-//
-//    /**
-//     * Метод для замены в пользовательском выражении унарного минуса на спецсимвол "#".
-//     */
-//    ArrayList<String> unaryMinusSymbolChanger() {
-//
-//        ArrayList<String> arrayListTokens = this.validExpression;
-//        for (int i = 1; i < arrayListTokens.size(); i++) {
-//            if (i == 1 && arrayListTokens.get(0).equals("-")) {
-//                arrayListTokens.set(0, "#");
-//                //i++;
-//            } else if (arrayListTokens.get(i).equals("-") &&
-//                    brackets.containsValue(arrayListTokens.get(i - 1).charAt(0))) {
-//                arrayListTokens.set(i, "#");
-//                //i++;
-//            }
-//
-//        }
-//        return arrayListTokens;
-//    }
 
     /**
      * Метод проверки в пользовательском выражении наличия унарного минуса и его замены.

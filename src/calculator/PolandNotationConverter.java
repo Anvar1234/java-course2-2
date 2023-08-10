@@ -51,7 +51,7 @@ public class PolandNotationConverter {
                         resultPostfixArray.add(operators.poll());
                     }
                     //иначе удаляем откр скобку (последний эл-нт): до этого было operators.remove("(");
-                    operators.poll();
+                    operators.remove("(");
                 }
             }
             /**
